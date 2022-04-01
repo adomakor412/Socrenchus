@@ -1,3 +1,6 @@
+#Project done in collobartion
+#Authors: Ronald Adomako and Bryan Goldstein
+
 # Setup
 
 ## Local development environment
