@@ -1,0 +1,206 @@
+schema {
+  query: Query
+  mutation: Mutation
+  subscription: Subscription
+}
+
+input createMessageInput {
+  roomId: ID!
+  viewerId: ID!
+  text: String!
+  clientMutationId: String
+}
+
+type createMessagePayload {
+  room: Room
+  newMessageEdge: MessageEdge
+  clientMutationId: String
+}
+
+input createMessageSubscriptionInput {
+  roomId: ID!
+  clientSubscriptionId: String!
+}
+
+type createMessageSubscriptionPayload {
+  room: Room
+  clientSubscriptionId: String!
+}
+
+input createTopicInput {
+  title: String!
+  description: String!
+  viewerId: ID!
+  clientMutationId: String
+}
+
+type createTopicPayload {
+  viewer: User
+  clientMutationId: String
+}
+
+input joinCloserRoomInput {
+  membershipId: ID!
+  viewerId: ID!
+  clientMutationId: String
+}
+
+type joinCloserRoomPayload {
+  viewer: User
+  clientMutationId: String
+}
+
+input joinTopicInput {
+  topicId: ID!
+  viewerId: ID!
+  clientMutationId: String
+}
+
+type joinTopicPayload {
+  viewer: User
+  clientMutationId: String
+}
+
+input leaveRoomInput {
+  roomId: ID!
+  viewerId: ID!
+  clientMutationId: String
+}
+
+type leaveRoomPayload {
+  viewer: User
+  clientMutationId: String
+}
+
+type Message {
+  id: ID!
+  text: String
+  room: Room
+  author: User
+  createdAt: String
+}
+
+type MessageConnection {
+  pageInfo: PageInfo!
+  edges: [MessageEdge]
+}
+
+type MessageEdge {
+  node: Message
+  cursor: String!
+}
+
+type Mutation {
+  createMessage(input: createMessageInput!): createMessagePayload
+  leaveRoom(input: leaveRoomInput!): leaveRoomPayload
+  viewRoom(input: viewRoomInput!): viewRoomPayload
+  userSettings(input: userSettingsInput!): userSettingsPayload
+  joinTopic(input: joinTopicInput!): joinTopicPayload
+  createTopic(input: createTopicInput!): createTopicPayload
+  joinCloserRoom(input: joinCloserRoomInput!): joinCloserRoomPayload
+  skipCloserRoom(input: skipCloserRoomInput!): skipCloserRoomPayload
+}
+
+interface Node {
+  id: ID!
+}
+
+type PageInfo {
+  hasNextPage: Boolean!
+  hasPreviousPage: Boolean!
+  startCursor: String
+  endCursor: String
+}
+
+input participantsChangedSubscriptionInput {
+  roomId: ID!
+  clientSubscriptionId: String!
+}
+
+type participantsChangedSubscriptionPayload {
+  room: Room
+  clientSubscriptionId: String!
+}
+
+type Query {
+  node(id: ID!): Node
+  viewer: User
+}
+
+type Room {
+  id: ID!
+  topic: Topic
+  users: [User]
+  messages: [Message] @deprecated(reason: "message_connection offers better control")
+  message_connection(after: String, first: Int, before: String, last: Int): MessageConnection
+  updatedAt: String
+  membership: RoomUser
+  lastMessage: Message
+}
+
+type RoomUser {
+  id: ID!
+  room: Room
+  user: User
+  lastRead: String
+  closestRoom: Room
+  hasCloserRoom: Boolean
+  closerRoomSkipped: Boolean
+  unreadCount: Int
+}
+
+input skipCloserRoomInput {
+  membershipId: ID!
+  clientMutationId: String
+}
+
+type skipCloserRoomPayload {
+  membership: RoomUser
+  clientMutationId: String
+}
+
+type Subscription {
+  createMessageSubscription(input: createMessageSubscriptionInput!): createMessageSubscriptionPayload
+  participantsChangedSubscription(input: participantsChangedSubscriptionInput!): participantsChangedSubscriptionPayload
+}
+
+type Topic {
+  id: ID!
+  title: String
+  description: String
+  rooms: [Room]
+  popularity: Int
+}
+
+type User implements Node {
+  id: ID!
+  name: String
+  email: String
+  facebook_id: String
+  avatar_url: String
+  notifications_enabled: Boolean
+  topics(search: String): [Topic]
+  rooms(id: ID, topicId: ID): [Room]
+}
+
+input userSettingsInput {
+  viewerId: ID!
+  notifications_enabled: Boolean
+  clientMutationId: String
+}
+
+type userSettingsPayload {
+  viewer: User
+  clientMutationId: String
+}
+
+input viewRoomInput {
+  roomId: ID!
+  viewerId: ID!
+  clientMutationId: String
+}
+
+type viewRoomPayload {
+  viewer: User
+  clientMutationId: String
+}

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb1602976063296041</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>FacebookAppID</key>
+	<string>1602976063296041</string>
+	<key>FacebookDisplayName</key>
+	<string>Herd</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>herd-brysgo.c9users.io</key>
+			<dict>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+			<key>herd.socrench.us</key>
+			<dict>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+			<key>localhost</key>
+			<dict>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Using location to find closer chat rooms</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Assets/Adelle/Adelle Bold Italic.ttf</string>
+		<string>Assets/Adelle/Adelle Bold.ttf</string>
+		<string>Assets/Adelle/Adelle Extra Bold Italic.ttf</string>
+		<string>Assets/Adelle/Adelle Extra Bold.ttf</string>
+		<string>Assets/Adelle/Adelle Heavy Italic.ttf</string>
+		<string>Assets/Adelle/Adelle Heavy.ttf</string>
+		<string>Assets/Adelle/Adelle Italic.ttf</string>
+		<string>Assets/Adelle/Adelle Light Italic.ttf</string>
+		<string>Assets/Adelle/Adelle Light.ttf</string>
+		<string>Assets/Adelle/Adelle Semi Bold Italic.ttf</string>
+		<string>Assets/Adelle/Adelle Semi Bold.ttf</string>
+		<string>Assets/Adelle/Adelle Thin Italic.ttf</string>
+		<string>Assets/Adelle/Adelle Thin.ttf</string>
+		<string>Assets/Adelle/Adelle.ttf</string>
+		<string>Assets/PT-Sans/PTC55F.ttf</string>
+		<string>Assets/PT-Sans/PTC75F.ttf</string>
+		<string>Assets/PT-Sans/PTN57F.ttf</string>
+		<string>Assets/PT-Sans/PTN77F.ttf</string>
+		<string>Assets/PT-Sans/PTS55F.ttf</string>
+		<string>Assets/PT-Sans/PTS56F.ttf</string>
+		<string>Assets/PT-Sans/PTS75F.ttf</string>
+		<string>Assets/PT-Sans/PTS76F.ttf</string>
+		<string>Assets/Line-Icons/01-content-edition-n.ttf</string>
+		<string>Assets/Line-Icons/02-status-n.ttf</string>
+		<string>Assets/Line-Icons/03-settings-n.ttf</string>
+		<string>Assets/Line-Icons/04-login-n.ttf</string>
+		<string>Assets/Line-Icons/05-time-n.ttf</string>
+		<string>Assets/Line-Icons/06-email-n.ttf</string>
+		<string>Assets/Line-Icons/07-users-n.ttf</string>
+		<string>Assets/Line-Icons/08-users-actions-n.ttf</string>
+		<string>Assets/Line-Icons/09-people-n.ttf</string>
+		<string>Assets/Line-Icons/10-messages-chat-n.ttf</string>
+		<string>Assets/Line-Icons/11-computers-n.ttf</string>
+		<string>Assets/Line-Icons/12-phone-n.ttf</string>
+		<string>Assets/Line-Icons/13-mobile-phones-n.ttf</string>
+		<string>Assets/Line-Icons/14-smart-devices-n.ttf</string>
+		<string>Assets/Line-Icons/15-video-meeting-n.ttf</string>
+		<string>Assets/Line-Icons/16-selection-cursors-n.ttf</string>
+		<string>Assets/Line-Icons/17-navigation-n.ttf</string>
+		<string>Assets/Line-Icons/18-content-n.ttf</string>
+		<string>Assets/Line-Icons/19-vote-rewards-n.ttf</string>
+		<string>Assets/Line-Icons/20-lock-n.ttf</string>
+		<string>Assets/Line-Icons/21-share-n.ttf</string>
+		<string>Assets/Line-Icons/22-interface-feedback-n.ttf</string>
+		<string>Assets/Line-Icons/23-data-transfer-n.ttf</string>
+		<string>Assets/Line-Icons/24-cloud-n.ttf</string>
+		<string>Assets/Line-Icons/25-synchronize-n.ttf</string>
+		<string>Assets/Line-Icons/26-server-n.ttf</string>
+		<string>Assets/Line-Icons/27-remove-add-n.ttf</string>
+		<string>Assets/Line-Icons/28-resize-move-n.ttf</string>
+		<string>Assets/Line-Icons/29-controls-n.ttf</string>
+		<string>Assets/Line-Icons/30-bookmarks-tags-n.ttf</string>
+		<string>Assets/Line-Icons/31-organization-n.ttf</string>
+		<string>Assets/Line-Icons/32-design-n.ttf</string>
+		<string>Assets/Line-Icons/33-design-actions-n.ttf</string>
+		<string>Assets/Line-Icons/34-office-n.ttf</string>
+		<string>Assets/Line-Icons/35-photos-images-n.ttf</string>
+		<string>Assets/Line-Icons/36-videos-n.ttf</string>
+		<string>Assets/Line-Icons/37-audio-n.ttf</string>
+		<string>Assets/Line-Icons/38-weather-n.ttf</string>
+		<string>Assets/Line-Icons/39-smileys-n.ttf</string>
+		<string>Assets/Line-Icons/40-touch-gestures-n.ttf</string>
+		<string>Assets/Line-Icons/41-shopping-n.ttf</string>
+		<string>Assets/Line-Icons/42-business-n.ttf</string>
+		<string>Assets/Line-Icons/43-shipping-delivery-n.ttf</string>
+		<string>Assets/Line-Icons/44-money-n.ttf</string>
+		<string>Assets/Line-Icons/45-currencies-n.ttf</string>
+		<string>Assets/Line-Icons/46-programming-n.ttf</string>
+		<string>Assets/Line-Icons/47-applications-n.ttf</string>
+		<string>Assets/Line-Icons/48-network-n.ttf</string>
+		<string>Assets/Line-Icons/49-text-n.ttf</string>
+		<string>Assets/Line-Icons/50-keyboard-n.ttf</string>
+		<string>Assets/Line-Icons/51-alignement-n.ttf</string>
+		<string>Assets/Line-Icons/52-locations-n.ttf</string>
+		<string>Assets/Line-Icons/53-places-n.ttf</string>
+		<string>Assets/Line-Icons/54-real-estate-n.ttf</string>
+		<string>Assets/Line-Icons/55-travel-n.ttf</string>
+		<string>Assets/Line-Icons/56-way-finding-n.ttf</string>
+		<string>Assets/Line-Icons/57-hotel-n.ttf</string>
+		<string>Assets/Line-Icons/58-beauty-spas-n.ttf</string>
+		<string>Assets/Line-Icons/59-nature-ecology-n.ttf</string>
+		<string>Assets/Line-Icons/60-sport-n.ttf</string>
+		<string>Assets/Line-Icons/61-transportation-n.ttf</string>
+		<string>Assets/Line-Icons/62-construction-n.ttf</string>
+		<string>Assets/Line-Icons/63-space-n.ttf</string>
+		<string>Assets/Line-Icons/64-pet-n.ttf</string>
+		<string>Assets/Line-Icons/65-religion-n.ttf</string>
+		<string>Assets/Line-Icons/66-furnitures-n.ttf</string>
+		<string>Assets/Line-Icons/67-tools-n.ttf</string>
+		<string>Assets/Line-Icons/68-objects-n.ttf</string>
+		<string>Assets/Line-Icons/69-lights-n.ttf</string>
+		<string>Assets/Line-Icons/70-crime-n.ttf</string>
+		<string>Assets/Line-Icons/71-security-n.ttf</string>
+		<string>Assets/Line-Icons/72-health-n.ttf</string>
+		<string>Assets/Line-Icons/73-drink-n.ttf</string>
+		<string>Assets/Line-Icons/74-food-n.ttf</string>
+		<string>Assets/Line-Icons/75-kitchen-n.ttf</string>
+		<string>Assets/Line-Icons/76-clothes-n.ttf</string>
+		<string>Assets/Line-Icons/77-leisure-n.ttf</string>
+		<string>Assets/Line-Icons/78-video-games-n.ttf</string>
+		<string>Assets/Line-Icons/79-romance-n.ttf</string>
+		<string>Assets/Line-Icons/80-children-n.ttf</string>
+		<string>Assets/Line-Icons/81-christmas-n.ttf</string>
+		<string>Assets/Line-Icons/82-basic-n.ttf</string>
+		<string>Assets/Line-Icons/83-folders-n.ttf</string>
+		<string>Assets/Line-Icons/84-office-n.ttf</string>
+		<string>Assets/Line-Icons/85-tasks-n.ttf</string>
+		<string>Assets/Line-Icons/86-notes-n.ttf</string>
+		<string>Assets/Line-Icons/87-time-n.ttf</string>
+		<string>Assets/Line-Icons/88-zipped-n.ttf</string>
+		<string>Assets/Line-Icons/89-design-n.ttf</string>
+		<string>Assets/Line-Icons/90-images-n.ttf</string>
+		<string>Assets/Line-Icons/91-audio-n.ttf</string>
+		<string>Assets/Line-Icons/92-video-n.ttf</string>
+		<string>Assets/Line-Icons/93-statistics-n.ttf</string>
+		<string>Assets/Line-Icons/95-copyright-n.ttf</string>
+		<string>Assets/Line-Icons/96-arrows-n.ttf</string>
+		<string>Assets/Line-Icons/97-logos-n.ttf</string>
+	</array>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

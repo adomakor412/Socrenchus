@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "653402545668",
+    "firebase_url": "https://herd-d9d77.firebaseio.com",
+    "project_id": "herd-d9d77",
+    "storage_bucket": "herd-d9d77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653402545668:android:4ef1f9cf4b1b2563",
+        "android_client_info": {
+          "package_name": "com.herditall.herd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653402545668-bm7ecc0154uakgcosj5gis08dtd6og55.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZNRbLimsyTdm3AqZ5nQ5OBAXzdUPQLOM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653402545668:android:f5743aed42590f6f",
+        "android_client_info": {
+          "package_name": "com.herditall.herd.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653402545668-bm7ecc0154uakgcosj5gis08dtd6og55.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZNRbLimsyTdm3AqZ5nQ5OBAXzdUPQLOM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
