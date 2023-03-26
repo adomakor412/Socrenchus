@@ -38,7 +38,7 @@
     "graphql-relay-subscription": "^0.1.0",
     "jest": "^15.1.1",
     "jscodemigrate": "^1.0.5",
-    "jsonwebtoken": "^7.1.9",
+    "jsonwebtoken": "^9.0.0",
     "knex": "^2.4.0",
     "md5": "^2.1.0",
     "morgan": "^1.7.0",
